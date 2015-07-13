@@ -141,8 +141,8 @@ private void DisplayLoggingInfo() {
 		
 					try {
 						JSONObject json = new JSONObject();
-						json.put("Id", "157");
-						String url = "http://staging.proaudiostar.com/api/main/frmApi.php?api=" + "GetSubcat";
+						json.put("Id", "");
+						String url = "URL url here" + "GetSubcat";
 		
 						System.out.println("<<<<<<<<@@@<<<url>>>>>>>>>>>>>>>>>>>>>"
 								+ url);
