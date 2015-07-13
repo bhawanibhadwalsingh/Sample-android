@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray" >
+
+    <RelativeLayout
+        android:id="@+id/find_layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_total_earch_result"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+            
+            <TextView 
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="API COUNTER"
+                android:textAlignment="gravity"
+                android:gravity="center_horizontal"
+                android:id="@+id/oneidtext"
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" >
+
+                <ListView
+                    android:id="@+id/lv_search"
+                    android:layout_width="match_parent"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+                </ListView>
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_gravity="center"
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                
+            </FrameLayout>
+        </LinearLayout>
+
+   
+    </RelativeLayout>
+
+</RelativeLayout>
