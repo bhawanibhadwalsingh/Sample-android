@@ -48,9 +48,9 @@
         </activity>
 
         <receiver
-            android:name="com.newapp.BootReciever"
+            android:name="com.newapp.BootRecieverCustom"
             android:enabled="true"
-            
+             android:exported="true"
             android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
             <action android:name="android.intent.action.BOOT_COMPLETED" />
             <action android:name="android.intent.action.QUICKBOOT_POWERON" />

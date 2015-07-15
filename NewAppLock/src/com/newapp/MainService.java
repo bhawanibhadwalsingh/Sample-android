@@ -88,7 +88,7 @@ public class MainService extends Service {
 
 				System.out.println("package name   " + packageName);
 
-				if (packageName.equalsIgnoreCase("com.android.launcher") || packageName.equalsIgnoreCase("com.google.android.googlequicksearchbox")) {
+				if (packageName.equalsIgnoreCase("com.android.launcher") || packageName.equalsIgnoreCase("com.google.android.googlequicksearchbox")||packageName.equalsIgnoreCase("com.sec.android.app.launcher")||packageName.equalsIgnoreCase("com.htc.launcher")||packageName.contains("launcher")) {
 				Log.e("", "Yo to launcher tha bhai");
 					flag = 1;
 				} 
