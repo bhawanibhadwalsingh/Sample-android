@@ -10,10 +10,10 @@ public class BootRecieverCustom extends BroadcastReceiver
 @Override
 public void onReceive(Context context, Intent intent) {
     // TODO Auto-generated method stub
-	if (Intent.ACTION_BOOT_COMPLETED.equals(intent.getAction())) {
-        Intent serviceIntent = new Intent(context, MainService.class);
-        context.startService(serviceIntent);
-    }
+	if (intent.getAction().equalsIgnoreCase(Intent.ACTION_BOOT_COMPLETED)) {
+		Intent serviceIntent = new Intent(context, MainService.class);
+		context.startService(serviceIntent);
+	}
 }
 
 }

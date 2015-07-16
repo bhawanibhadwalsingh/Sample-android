@@ -42,7 +42,7 @@ public class MainService extends Service {
 		System.out.println(" oncreate");
 		mainService = new MainService();
 
-
+		Toast.makeText(this, "AppLock initialize...", 10000).show();
 		final SharedPreferences pref = getApplicationContext().getSharedPreferences("block", 0);
 
 		check = pref.getString("check", "");
